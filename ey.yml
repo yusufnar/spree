@@ -24,7 +24,7 @@ defaults:
   # This setting can be overridden for individual deployments using
   # the command line options --migrate or --no-migrate.
   #
-  migrate: false
+  migrate: true
   migration_command: rake sandbox
 
 
