@@ -25,7 +25,7 @@ defaults:
   # the command line options --migrate or --no-migrate.
   #
   migrate: false
-    migration_command: rake sandbox
+  migration_command: rake sandbox
 
 
   # Default migration command to run when migrations are enabled.
