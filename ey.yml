@@ -16,7 +16,7 @@
 # For advanced usage, see the source that loads this configuration:
 # https://github.com/engineyard/engineyard-serverside/blob/master/lib/engineyard-serverside/configuration.rb
 #
-defaults: 
+
   # Run migrations during deploy by default.
   #
   # When set to true, runs the migration_command (below) during deploy.
