@@ -171,7 +171,7 @@ defaults:
 #
 environments:
   spree_dev:
-    migrate:true
+    migrate: true
     migration_command: rake sandbox
   # These options will only apply to the EXAMPLE_ENVIRONMENT environment.
   #EXAMPLE_ENVIRONMENT:
