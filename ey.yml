@@ -16,7 +16,7 @@
 # For advanced usage, see the source that loads this configuration:
 # https://github.com/engineyard/engineyard-serverside/blob/master/lib/engineyard-serverside/configuration.rb
 #
-
+defaults:
   # Run migrations during deploy by default.
   #
   # When set to true, runs the migration_command (below) during deploy.
@@ -24,11 +24,10 @@
   # This setting can be overridden for individual deployments using
   # the command line options --migrate or --no-migrate.
   #
-  migrate: true
+  migrate: false
 
   # Default migration command to run when migrations are enabled.
   #
-  migration_command: rake sandbox2
 
   # Enables rails assets precompilation always and halts when the task fails.
   #
@@ -171,9 +170,11 @@
 # Environment options will override the default options above.
 #
 environments:
-
+  spree_dev:
+    migrate:true
+    migration_command: rake sandbox2
   # These options will only apply to the EXAMPLE_ENVIRONMENT environment.
   #EXAMPLE_ENVIRONMENT:
     #precompile_unchanged_assets: true
-copy_exclude:
-- .git
+  copy_exclude:
+    - .git
